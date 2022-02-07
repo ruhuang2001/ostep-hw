@@ -1,5 +1,5 @@
 ## My Answers
-1. 100%
+1.100%
 
 ```
 > python process-run.py -l 5:100,5:100 -c -p
@@ -21,7 +21,7 @@ Stats: IO Busy  0 (0.00%)
 ```
 
 
-2. 11 
+2.11 
     = 4(process0) + 2(process1Run) + 5(defalut waiting time due to 0% hit rate)
 
 ```
@@ -45,7 +45,7 @@ Stats: IO Busy  5 (45.45%)
 ```
 
 
-3. 7 IOs
+3.7 IOs
     Due to the PID is free when run process0, the waiting time can start process1
 
 ```
@@ -65,7 +65,7 @@ Stats: IO Busy  5 (71.43%)
 ```
 
 
-4. When process0 finished, process1 start
+4.When process0 finished, process1 start
 
 ```
 > python process-run.py -l 1:0,4:100 -c -S SWITCH_ON_END   
@@ -84,7 +84,7 @@ Time        PID: 0        PID: 1           CPU           IOs
 ```
 
 
-5. The waiting of process0 can start process1
+5.The waiting of process0 can start process1
 
 ```
 > python process-run.py -l 1:0,4:100 -c -SSWITCH_ON_IO  
@@ -99,7 +99,7 @@ Time        PID: 0        PID: 1           CPU           IOs
 ```
 
 
-6. Underutilized
+6.Underutilized
 
 ```
 > python process-run.py ./process-run.py -l 3:0,5:100,5:100,5:100 -SSWITCH_ON_IO -I IO_RUN_LATER -c -p
@@ -142,7 +142,7 @@ Stats: IO Busy  15 (48.39%)
 ```
 
 
-7. It can fully use the Waiting to run other process
+7.It can fully use the Waiting to run other process
 
 ```
 > python process-run.py -l 3:0,5:100,5:100,5:100 -S SWITCH_ON_IO -I IO_RUN_IMMEDIATE -c -p
@@ -174,7 +174,7 @@ Stats: CPU Busy 21 (100.00%)
 Stats: IO Busy  15 (71.43%)
 ```
 
-8. 
+8 .
 
 ```
 > python process-run.py -s 1 -l3:50,3:50, -s 2 -l 3:50,3:50, -s 3 -l 3:50,3:50 -c -p

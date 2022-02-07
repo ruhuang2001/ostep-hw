@@ -7,6 +7,8 @@ I am new to operating system. If you find any error in this repository, welcome 
 
 [Chapter5 Process API](https://github.com/ruhuang2001/ostep-hw/tree/main/Chapter5)
 
+[Chapter7 Scheduling Basics](https://github.com/ruhuang2001/ostep-hw/tree/main/Chapter7/Chapter7.md)
+
 ## Concurrency
 
 
